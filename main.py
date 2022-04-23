@@ -1,10 +1,17 @@
 
 
-from ctypes.wintypes import RGB
-import tkinter as tk
-from turtle import color
 
-from pyparsing import col
+
+
+import tkinter as tk
+
+
+def get(number):
+    
+    op=op+str(number)
+
+
+
 # 建立視窗Create a window
 window_0 = tk.Tk()
 # 設定視窗大小
@@ -16,25 +23,24 @@ window_0.resizable(False,False)
 window_0.title('數字計算視窗編寫')
 
 # Label&Button元件調整
-
-label_0=tk.Label(window_0,text=0,font=('新細明體',20,'bold'),fg='red',height=4)
-button_1=tk.Button(text='1',width=10,height=4,font=(15))
-button_2=tk.Button(text='2',width=10,height=4,font=(15))
-button_3=tk.Button(text='3',width=10,height=4,font=(15))
-button_4=tk.Button(text='4',width=10,height=4,font=(15))
-button_5=tk.Button(text='5',width=10,height=4,font=(15))
-button_6=tk.Button(text='6',width=10,height=4,font=(15))
-button_7=tk.Button(text='7',width=10,height=4,font=(15))
-button_8=tk.Button(text='8',width=10,height=4,font=(15))
-button_9=tk.Button(text='9',width=10,height=4,font=(15))
-button_0=tk.Button(text='0',width=10,height=4,font=(15))
-button_e=tk.Button(text='=',width=10,height=4,bg='cyan',font=(15))# =
-button_a=tk.Button(text='+',width=10,height=4,font=(15))# +
-button_r=tk.Button(text='-',width=10,height=4,font=(15))# -
-button_t=tk.Button(text='x',width=10,height=4,font=(15))# *
-button_d=tk.Button(text='/',width=10,height=4,font=(15))# /
-button_c=tk.Button(text='C',width=10,height=4,font=(15))# c
-label_0.grid(row=0, column=3,padx=5,pady=10)
+entry_0=tk.Entry(window_0,text=0,font=('新細明體',20,'bold'),fg='red')
+button_1=tk.Button(text='1',width=10,height=4,font=(15),command=get(1))
+button_2=tk.Button(text='2',width=10,height=4,font=(15),command=get(2))
+button_3=tk.Button(text='3',width=10,height=4,font=(15),command=get(3))
+button_4=tk.Button(text='4',width=10,height=4,font=(15),command=get(4))
+button_5=tk.Button(text='5',width=10,height=4,font=(15),command=get(5))
+button_6=tk.Button(text='6',width=10,height=4,font=(15),command=get(6))
+button_7=tk.Button(text='7',width=10,height=4,font=(15),command=get(7))
+button_8=tk.Button(text='8',width=10,height=4,font=(15),command=get(8))
+button_9=tk.Button(text='9',width=10,height=4,font=(15),command=get(9))
+button_0=tk.Button(text='0',width=10,height=4,font=(15),command=get(0))
+button_e=tk.Button(text='=',width=10,height=4,bg='cyan',font=(15),command=get())# =
+button_a=tk.Button(text='+',width=10,height=4,font=(15),command=get())# +
+button_r=tk.Button(text='-',width=10,height=4,font=(15),command=get())# -
+button_t=tk.Button(text='x',width=10,height=4,font=(15),command=get())# *
+button_d=tk.Button(text='/',width=10,height=4,font=(15),command=get())# /
+button_c=tk.Button(text='C',width=10,height=4,font=(15),command=get())# c
+entry_0.grid(row=0, columnspan=4)
 button_1.grid(row=3,column=0,padx=5,pady=10)
 button_2.grid(row=3,column=1,padx=5,pady=10)
 button_3.grid(row=3,column=2,padx=5,pady=10)
