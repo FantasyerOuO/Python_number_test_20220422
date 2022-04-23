@@ -15,10 +15,10 @@ window_0.resizable(False,False)
 # 設定視窗標題
 window_0.title('數字計算視窗編寫')
 
-# Label
+# Label&Button元件調整
 
 label_0=tk.Label(window_0,text=0,font=('新細明體',20,'bold'),fg='red',height=4)
-button_1=tk.Button(text='1',width=10,height=4,font=('新細明體',15))
+button_1=tk.Button(text='1',width=10,height=4,font=(15))
 button_2=tk.Button(text='2',width=10,height=4,font=(15))
 button_3=tk.Button(text='3',width=10,height=4,font=(15))
 button_4=tk.Button(text='4',width=10,height=4,font=(15))
@@ -34,8 +34,6 @@ button_r=tk.Button(text='-',width=10,height=4,font=(15))# -
 button_t=tk.Button(text='x',width=10,height=4,font=(15))# *
 button_d=tk.Button(text='/',width=10,height=4,font=(15))# /
 button_c=tk.Button(text='C',width=10,height=4,font=(15))# c
-
-
 label_0.grid(row=0, column=3,padx=5,pady=10)
 button_1.grid(row=3,column=0,padx=5,pady=10)
 button_2.grid(row=3,column=1,padx=5,pady=10)
