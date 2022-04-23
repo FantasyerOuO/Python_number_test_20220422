@@ -54,5 +54,5 @@ button_d.grid(row=4,column=3,padx=5,pady=10)
 
 
 
-# 設定視窗迴圈
+# 常駐主視窗
 window_0.mainloop()
